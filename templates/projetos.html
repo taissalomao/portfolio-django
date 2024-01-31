@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Projetos{% endblock title %} 
+{% block body %}
+<section class="projetos">
+    <div class="interface">
+      <h2 class="titulo">MEUS PROJETOS</h2>
+      <div class="flex">
+        <a href="https://github.com/T3chnogroup/Projeto-InFatec">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/infatec.png' %}');
+            ">
+            <div class="overlay">InFatec</div>
+          </div>
+        </a>
+        
+        <a href="https://github.com/excalibur-coders/IONICRH">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/ionic.png' %}');
+            ">
+            <div class="overlay">Ionic RH</div>
+          </div>
+        </a>
+        
+        <a href="https://github.com/TheAchieversDSM/API-2022.2">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/uol.png' %}');
+            ">
+            <div class="overlay">CrossSeling</div>
+          </div>
+        </a>
+        
+        <a href="https://github.com/TheAchieversDSM/API-2023.1">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/tecsus.png' %}');
+            ">
+            <div class="overlay">Tecsus</div>
+          </div>
+        </a>
+        
+{% comment %}         <a href="https://github.com/TheAchieversDSM/API-2023.2">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/oracle.png' %}');
+            ">
+            <div class="overlay">Task App</div>
+          </div>
+        </a> {% endcomment %}
+      </div>
+    </div>
+</section>
+{% endblock body %}

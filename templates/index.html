@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+{% block title %}Inicio{% endblock title %} 
+{% load static %}
+{% block body %}
+<main>
+  <section class="topo-do-site">
+    <div class="interface">
+      <div class="flex">
+        <div class="txt-topo-site">
+          <h1>
+            Olá, eu sou a <span>Taís</span>, bem-vindo(a)!
+          </h1>
+          <p>
+            Sou uma desenvolvedora de software, atualmente em busca de novas oportunidades para expandir minhas habilidades e contribuir para projetos inovadores.
+          </p>
+          <div class="btn-contato">
+            <a href="{% url 'contato' %}"><button>Entre em contato</button></a>
+          </div>
+        </div>
+        <div class="img-topo-do-site">
+          <img src="{% static 'assets/images/icon.png' %}" alt="tais" />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock body %}

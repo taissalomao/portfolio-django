@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Sobre{% endblock title %}
+{% load static %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/fundo.png' %}" alt="tais" class="perfil"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Muito prazer, <span>sou a Taís Salomão!</span>
+            </h2>
+            <p>
+                Tenho 29 anos e sou estudante de Desenvolvimento de Software Multiplataforma na FATEC SJCampos/SP, estou no sexto semestre e me formo neste ano.
+            </p>
+
+            <p>Faço estágio na Prefeitura Municipal de SJCampos/SP, e essa experiência têm me ajudado muito a desenvolve minhas habilidades, tanto as técnicas, quanto as não técnicas, como trabalho em equipe, comunicação, etc.</p>
+            <div class="btn-social">
+              <a href="https://github.com/taissalomao"><button><i class="bi bi-github"></i></button></a>
+              <a href="https://www.linkedin.com/in/tais-salomao/"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="{% url 'contato' %}"><button><i class="bi bi-envelope-at-fill"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

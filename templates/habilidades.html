@@ -1,0 +1,36 @@
+{% extends 'base.html' %} 
+{% block title %}Habilidades{% endblock title %} 
+{%load static %} 
+{% block body %}
+
+  <section class="habilidades">
+    <div class="interface">
+      <h2 class="titulo">HABILIDADES</h2>
+{% comment %}       <p>Linguagens, frameworks que já tive a oportunidade de trabalhar:</p> {% endcomment %}
+      <div class="flex">
+        <div class="habilidades-box">
+          <i class="bi bi-code-slash"></i>
+          <h3>WebApp</h3>
+          <p>
+            JavaScript, HTML, CSS, Python, 
+            Typescript
+          </p>
+          <p>Django, Flask, Java, React,</p>
+        </div>
+
+        <div class="habilidades-box">
+          <i class="bi bi-phone"></i>
+          <h3>Mobile</h3>
+          <p>React Native, Expo</p>
+        </div>
+
+        <div class="habilidades-box">
+          <i class="bi bi-database"></i>
+          <h3>Banco de Dados</h3>
+          <p>MySQL, MongoDB, Firebase, Cassandra</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock body %}
