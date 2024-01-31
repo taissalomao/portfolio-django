@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y+8g=4c0%jb$!jc()8(ar!19+o3ycv&r@4b*%kx(=3dhwh7v5m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 
 # Application definition
@@ -119,7 +119,17 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 import os
+# Diretório base do seu projeto
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# URL para os arquivos estáticos
+STATIC_URL = '/static/'
+
+# Lista de diretórios adicionais onde os arquivos estáticos podem ser encontrados
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# Diretório onde os arquivos estáticos serão coletados
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
