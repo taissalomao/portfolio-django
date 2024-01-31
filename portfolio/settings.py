@@ -122,7 +122,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # URL para os arquivos estáticos
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Lista de diretórios adicionais onde os arquivos estáticos podem ser encontrados
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
