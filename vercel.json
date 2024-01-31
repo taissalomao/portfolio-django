@@ -1,23 +1,36 @@
 {
+  "version": 2,
   "builds": [
-    {
-      "src": "portfolio/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
-    }
+     {
+       "src": "manage.py",
+       "use": "@vercel/python",
+       "config": {
+         "maxLambdaSize": "15mb",
+         "runtime": "python3.9"
+       }
+     }
   ],
   "routes": [
-    {
-      "src": "/staticfiles/(.*)",
-      "dest": "/staticfiles/$1"
+     {
+       "src": "/static/(.*)",
+       "dest": "/staticfiles/$1"
+     },
+     {
+       "src": "/(.*)",
+       "dest": "manage.py"
      }
-     ,
-    {
-      "src": "/(.*)",
-      "dest": "/portfolio/wsgi.py"
-    }
-  ]
-}
+  ],
+  "env": {
+     "DJANGO_SETTINGS_MODULE": "myproject.settings"
+  },
+  "build": {
+     "env": {
+       "DJANGO_SETTINGS_MODULE": "myproject.settings"
+     },
+     "commands": [
+       "pip install -r requirements.txt",
+       "python manage.py collectstatic --noinput"
+     ]
+  }
+ }
+ 
