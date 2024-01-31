@@ -7,7 +7,7 @@
     <title>{% block title %}Portfolio{% endblock title %}</title>
 
     <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
-    <link rel="shortcut icon" href="{% static 'assets/images/fav.png' %}" />
+    <link rel="shortcut icon" href="{% static '/assets/images/favicon.png' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,7 @@
             <li><a href="{% url 'sobre' %}">Sobre</a></li>
             <li><a href="{% url 'habilidades' %}">Habilidades</a></li>
             <li><a href="{% url 'projetos' %}">Projetos</a></li>
-{% comment %}             <li><a href="{% url 'contato' %}">Contato</a></li> {% endcomment %}
+            <li><a href="{% url 'contato' %}">Contato</a></li>
           </ul>
         </nav>
 
@@ -44,10 +44,7 @@
           <a href="{% static 'assets/doc/TGS_curriculo.pdf' %}" download>
               <button>Baixar CV</button>
           </a>
-      </div>
-      
-      
-      
+      </div>  
       </div>
     </header>
 
@@ -81,6 +78,4 @@
     });
   </script>
   {% endblock script %}
-  
-
 </html>
