@@ -91,6 +91,11 @@ section.topo-do-site{
     padding: 40px 4%;
 }
 
+.topo-do-site .img-topo-do-site {
+    text-align: center;
+}
+
+
 section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
@@ -105,13 +110,18 @@ section.topo-do-site .flex{
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
-.topo-do-site .img-topo-do-site img{
+.topo-do-site .img-topo-do-site img {
     position: relative;
     animation: flutuar 3s ease-in-out infinite alternate;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 @keyframes flutuar{
     0%{
