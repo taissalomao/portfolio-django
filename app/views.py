@@ -36,6 +36,24 @@ def contato(request):
 def projetos(request):
     return render (request, 'projetos.html')
 
+def infatec(request):
+    return render (request, 'infatec.html')
+
+def uol(request):
+    return render (request, 'uol.html')
+
+def appOracle(request):
+    return render (request, 'appOracle.html')
+
+def kitsune(request):
+    return render (request, 'kitsune.html')
+
+def tecsus(request):
+    return render (request, 'tecsus.html')
+
+def ionic(request):
+    return render (request, 'ionic.html')
+
 def habilidades(request):
     return render (request, 'habilidades.html')
 
