@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Tecsus{% endblock title %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/tecsus.gif' %}" alt="tais" class="projeto"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Projeto 3º Semestre - Tecsus
+            </h2>
+            <p>
+              Estação meteorológica de baixo custo. Para o sucesso desse projeto, as medidas enviadas pelos sensores devem ser coletadas e tratadas, de modo que elas possam ser visualizadas através de um portal no formato de relatórios e dashboards. Além da parte informativa, contando até mesmo com a apresentação de conceitos matemáticos para os cálculos dos parâmetros, o sistema tem como objetivo relacionar a importância do monitoramento ambiental como ferramenta para evitar possíveis desastres naturais através da geração de alertas.
+            </p>
+
+            <p>Nesse projeto em especifico atuei como desevenvolvedora backEnd e, utilizando ReactJS, Node, TypeScript e MySQL. Atuei também como P.O, tratando diretamente com a empresa parceira.</p>
+            <div class="btn-social">
+              <a href="https://github.com/TheAchieversDSM/API-2023.1"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

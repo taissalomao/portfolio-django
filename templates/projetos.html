@@ -6,45 +6,54 @@
     <div class="interface">
       <h2 class="titulo">MEUS PROJETOS</h2>
       <div class="flex">
-        <a href="https://github.com/T3chnogroup/Projeto-InFatec">
+        <a href="{% url 'infatec' %}">
           <div class="img-projetos"
             style="background-image: url('{% static 'assets/images/infatec.png' %}');
             ">
-            <div class="overlay">InFatec</div>
+            <div class="overlay">Saiba Mais</div>
           </div>
         </a>
         
-        <a href="https://github.com/excalibur-coders/IONICRH">
+        <a href="{% url 'ionic' %}">
           <div class="img-projetos"
             style="background-image: url('{% static 'assets/images/ionic.png' %}');
             ">
-            <div class="overlay">Ionic RH</div>
+            <div class="overlay">Saiba Mais</div>
           </div>
         </a>
         
-        <a href="https://github.com/TheAchieversDSM/API-2022.2">
+        <a href="{% url 'uol' %}">
           <div class="img-projetos"
             style="background-image: url('{% static 'assets/images/uol.png' %}');
             ">
-            <div class="overlay">CrossSeling</div>
+            <div class="overlay">Saiba Mais</div>
           </div>
         </a>
-        
-        <a href="https://github.com/TheAchieversDSM/API-2023.1">
+      </div>
+      <div class="flex">
+        <a href="{% url 'tecsus' %}">
           <div class="img-projetos"
             style="background-image: url('{% static 'assets/images/tecsus.png' %}');
             ">
-            <div class="overlay">Tecsus</div>
+            <div class="overlay">Saiba Mais</div>
           </div>
         </a>
         
-{% comment %}         <a href="https://github.com/TheAchieversDSM/API-2023.2">
+        <a href="{% url 'appOracle' %}">
           <div class="img-projetos"
             style="background-image: url('{% static 'assets/images/oracle.png' %}');
             ">
-            <div class="overlay">Task App</div>
+            <div class="overlay">Saiba Mais</div>
           </div>
-        </a> {% endcomment %}
+        </a>
+
+        <a href="{% url 'kitsune' %}">
+          <div class="img-projetos"
+            style="background-image: url('{% static 'assets/images/kitsune.png' %}');
+            ">
+            <div class="overlay">Saiba Mais</div>
+          </div>
+        </a>
       </div>
     </div>
 </section>

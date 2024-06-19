@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}CrossSelling{% endblock title %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/uol.gif' %}" alt="tais" class="projeto"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Projeto 4º Semestre - CrossSelling
+            </h2>
+            <p>
+              Esse projeto visava garantir que o cliente, com base nos produtos sugeridos a ele de acordo com seu perfil, contrate o que precisa em uma única compra, refletindo, assim, no aumento de receita do negócio.
+            </p>
+
+            <p>Nesse projeto atuei como desevenvolvedora backEnd, utilizando Java, Spring e MongoDB.</p>
+            <div class="btn-social">
+              <a href="https://github.com/TheAchieversDSM/API-2022.2"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

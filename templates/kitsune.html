@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Kitsune{% endblock title %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/kitsune.gif' %}" alt="tais" class="projeto"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Projeto 6º Semestre - Kitsune
+            </h2>
+            <p>
+              Projeto consiste em dashboards dinâmicos com filtros para auxiliar nas análises de dados sobre reviews de determinados produtos por parte de clientes, sendo essas informações previamente processadas através de técnicas de Processamento de Linguagem Natural.
+            </p>
+
+            <p>Nesse projeto em especifico atuei como desevenvolvedora backEnd, utilizando TypeScript, NodeJS e MySQL.</p>
+            <div class="btn-social">
+              <a href="https://github.com/TheAchieversDSM/API-2024.1"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

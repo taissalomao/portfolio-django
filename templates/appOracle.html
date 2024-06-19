@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}App Oracle{% endblock title %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/oracle.gif' %}" alt="tais" class="projeto"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Projeto 5º Semestre - AppOracle
+            </h2>
+            <p>
+              Aplicativo para para auxiliar na gestão de tarefas com questões de priorização. Para o sucesso do mesmo, além do gerenciamento de atividades, também possui uma parte reservada para gráficos de mensura sobre os resultados obtidos em um intervalo de tempo.
+            </p>
+
+            <p>Nesse projeto atuei como desevenvolvedora backEnd, utilizando ReactNative, Expo, TypeScript e MySQL.</p>
+            <div class="btn-social">
+              <a href="https://github.com/TheAchieversDSM/API-2023.2-Mobile"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

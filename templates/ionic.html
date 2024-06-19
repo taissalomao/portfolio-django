@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}IonicRH{% endblock title %}
+{% block body %}
+<section class="sobre">
+    <div class="interface">
+      <div class="flex">
+        <div class="img-sobre">
+          <img src="{% static 'assets/images/ionic.gif' %}" alt="tais" class="projeto"/>
+        </div>
+        <div class="txt-sobre">
+            <h2>
+              Projeto 2º Semestre - IonicRH
+            </h2>
+            <p>
+              O desafio deste projeto foi apoiar a área de Recursos Humanos e
+              Departamento Pessoal visando na melhoria de seus processos
+              administrativos, desenvolvendo um sistema para controle de todos os talentos da empresa (pessoas).
+              Após a aprovação no processo seletivo se fazia necessário a automatização do cadastro do colaborador (CLT ou PJ) em um sistema que traga informações sobre sua contratação, controle de documentação, dados, entre outros dados. Levando em consideração a LGPD para que o acesso seja restrito e seguro.
+            </p>
+
+            <p>Nesse projeto atuei como desevenvolvedora frontEnd, utilizando BootStrap, JavaScript, ReactJS.</p>
+            <div class="btn-social">
+              <a href="https://github.com/excalibur-coders/IONICRH"><button><i class="bi bi-github"></i></button></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}
